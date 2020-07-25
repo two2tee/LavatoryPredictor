@@ -2,19 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dacb43fd-4189-4181-a220-7186f9cd4ec9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/API/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/services/session_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/services/user_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/schemas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/services/auth_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/database/i_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/database/i_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/database/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/database/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/ioc.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/ioc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/routers/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/routers/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/routers/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/routers/sessions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/routers/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="6cd622dc-2443-4ccf-9300-d2c2260af47e" />
   <component name="ProjectId" id="1e1zlwrKjYGGlrDVMRxU6V2FXgn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,6 +42,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/API" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Dennis\Desktop\workfolder\LavatoryPredictor\API\services" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -65,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593504041563</updated>
       <workItem from="1593504044636" duration="802000" />
+      <workItem from="1595662316803" duration="6534000" />
     </task>
     <servers />
   </component>
@@ -80,28 +104,85 @@
       <screen x="0" y="30" width="2560" height="1410" />
     </state>
     <state x="1374" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.2560.1410@0.30.2560.1410" timestamp="1593504449553" />
+    <state x="1085" y="450" key="#com.intellij.ide.util.MemberChooser" timestamp="1595666084655">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state x="1085" y="450" key="#com.intellij.ide.util.MemberChooser/0.30.2560.1410@0.30.2560.1410" timestamp="1595666084655" />
+    <state x="502" y="647" width="1396" height="347" key="#xdebugger.evaluate" timestamp="1595668773395">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state x="502" y="647" width="1396" height="347" key="#xdebugger.evaluate/0.30.2560.1410@0.30.2560.1410" timestamp="1595668773395" />
     <state x="1700" y="493" key="FileChooserDialogImpl" timestamp="1593504848262">
       <screen x="0" y="30" width="2560" height="1410" />
     </state>
     <state x="1700" y="493" key="FileChooserDialogImpl/0.30.2560.1410@0.30.2560.1410" timestamp="1593504848262" />
-    <state width="1234" height="403" key="GridCell.Tab.0.bottom" timestamp="1593504849898">
+    <state width="2517" height="496" key="GridCell.Tab.0.bottom" timestamp="1595668857233">
       <screen x="0" y="30" width="2560" height="1410" />
     </state>
-    <state width="1234" height="403" key="GridCell.Tab.0.bottom/0.30.2560.1410@0.30.2560.1410" timestamp="1593504849898" />
-    <state width="1234" height="403" key="GridCell.Tab.0.center" timestamp="1593504849898">
+    <state width="2517" height="496" key="GridCell.Tab.0.bottom/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857233" />
+    <state width="2517" height="496" key="GridCell.Tab.0.center" timestamp="1595668857232">
       <screen x="0" y="30" width="2560" height="1410" />
     </state>
-    <state width="1234" height="403" key="GridCell.Tab.0.center/0.30.2560.1410@0.30.2560.1410" timestamp="1593504849898" />
-    <state width="1234" height="403" key="GridCell.Tab.0.left" timestamp="1593504849897">
+    <state width="2517" height="496" key="GridCell.Tab.0.center/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857232" />
+    <state width="2517" height="496" key="GridCell.Tab.0.left" timestamp="1595668857232">
       <screen x="0" y="30" width="2560" height="1410" />
     </state>
-    <state width="1234" height="403" key="GridCell.Tab.0.left/0.30.2560.1410@0.30.2560.1410" timestamp="1593504849897" />
-    <state width="1234" height="403" key="GridCell.Tab.0.right" timestamp="1593504849898">
+    <state width="2517" height="496" key="GridCell.Tab.0.left/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857232" />
+    <state width="2517" height="496" key="GridCell.Tab.0.right" timestamp="1595668857232">
       <screen x="0" y="30" width="2560" height="1410" />
     </state>
-    <state width="1234" height="403" key="GridCell.Tab.0.right/0.30.2560.1410@0.30.2560.1410" timestamp="1593504849898" />
+    <state width="2517" height="496" key="GridCell.Tab.0.right/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857232" />
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom" timestamp="1595668857178">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857178" />
+    <state width="2517" height="496" key="GridCell.Tab.1.center" timestamp="1595668857178">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.center/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857178" />
+    <state width="2517" height="496" key="GridCell.Tab.1.left" timestamp="1595668857178">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.left/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857178" />
+    <state width="2517" height="496" key="GridCell.Tab.1.right" timestamp="1595668857178">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.right/0.30.2560.1410@0.30.2560.1410" timestamp="1595668857178" />
+    <state x="361" y="480" width="570" height="524" key="StructurePopup" timestamp="1595667660661">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state x="361" y="480" width="570" height="524" key="StructurePopup/0.30.2560.1410@0.30.2560.1410" timestamp="1595667660661" />
+    <state x="449" y="648" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595662785311">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state x="449" y="648" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.2560.1410@0.30.2560.1410" timestamp="1595662785311" />
+    <state x="943" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1595668015684">
+      <screen x="0" y="30" width="2560" height="1410" />
+    </state>
+    <state x="943" y="347" width="672" height="678" key="search.everywhere.popup/0.30.2560.1410@0.30.2560.1410" timestamp="1595668015684" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/API/services/user_service.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/API/routers/users.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/API/routers/authentication.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LavatoryPredictor$app.coverage" NAME="app Coverage Results" MODIFIED="1593504426121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
+    <SUITE FILE_PATH="coverage/LavatoryPredictor$app.coverage" NAME="app Coverage Results" MODIFIED="1595668857164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
   </component>
 </project>

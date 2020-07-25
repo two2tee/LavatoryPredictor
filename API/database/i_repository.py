@@ -1,5 +1,7 @@
 import uuid
+from datetime import datetime
 from abc import ABCMeta, abstractmethod
+
 
 
 class IRepository:
@@ -29,8 +31,9 @@ class BaseRepository(IRepository):
 
     def create(self, entity):
         entity['id'] = uuid.uuid4
+        entity['createdon'] = datetime.utcnow()
         self.database.append(entity)
-        return entity['id']
+        return entity
 
     def read_all(self):
         return self.database

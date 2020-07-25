@@ -2,24 +2,20 @@ from typing import Optional
 from datetime import datetime
 from pydantic import BaseModel
 
-
-class UserIn(BaseModel):
+class UserBase(BaseModel):
     username: str
+    name: str
+    birthdate: Optional[datetime] = None
+    sex: Optional[datetime] = None
+    height: Optional[int] = None
+    weight: Optional[int] = None
+
+class UserCreateRequest(UserBase):
     password: str
-    name: str
-    birthdate: Optional[datetime] = None
-    sex: Optional[datetime] = None
-    height: Optional[int] = None
-    weight: Optional[int] = None
 
 
-class UserOut(BaseModel):
-    username: str
-    name: str
-    birthdate: Optional[datetime] = None
-    sex: Optional[datetime] = None
-    height: Optional[int] = None
-    weight: Optional[int] = None
+class UserCreateResponse(UserBase):
+    createdon: datetime
 
-class AuthUser(BaseModel):
+class UserAuth(BaseModel):
     username: str

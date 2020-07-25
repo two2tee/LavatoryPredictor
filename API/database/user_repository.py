@@ -1,6 +1,4 @@
-import uuid
 from database.i_repository import BaseRepository
-
 
 class InMemoryRepository(BaseRepository):
     def __init__(self):
@@ -8,4 +6,9 @@ class InMemoryRepository(BaseRepository):
 
     def read_username(self, username):
         return next((user for user in self.database if user['username'] == username), None)
+
+    def read_all_users(self, pageSize):
+            return self.database[:pageSize]
+
+
 
